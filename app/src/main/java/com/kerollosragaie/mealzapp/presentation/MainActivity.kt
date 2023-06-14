@@ -3,7 +3,9 @@ package com.kerollosragaie.mealzapp.presentation
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.kerollosragaie.mealzapp.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
