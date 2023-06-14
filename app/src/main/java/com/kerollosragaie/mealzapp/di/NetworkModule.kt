@@ -6,6 +6,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
@@ -18,12 +19,15 @@ object NetworkModule {
     @Provides
     @Singleton
     fun provideOkHttp(): OkHttpClient =
-        OkHttpClient.Builder().connectTimeout(20, TimeUnit.SECONDS).build()
+        OkHttpClient().newBuilder()
+            .addInterceptor(HttpLoggingInterceptor().apply {
+                level = HttpLoggingInterceptor.Level.BODY
+            }).connectTimeout(20, TimeUnit.SECONDS).build()
 
     @Provides
     @Singleton
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit = Retrofit.Builder()
-        .baseUrl("www.themealdb.com/api/json/v1/1/")
+        .baseUrl("https://www.themealdb.com/api/json/v1/1/")
         .client(okHttpClient)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
