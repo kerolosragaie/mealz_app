@@ -1,4 +1,4 @@
-package com.kerollosragaie.mealzapp
+package com.kerollosragaie.mealzapp.core
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
