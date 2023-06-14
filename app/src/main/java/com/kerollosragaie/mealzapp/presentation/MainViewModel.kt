@@ -14,7 +14,6 @@ import javax.inject.Inject
 @HiltViewModel
 class MainViewModel @Inject constructor(private val getMealsUseCase: GetMealsUseCaseImpl) :
     ViewModel() {
-
     companion object {
         private const val TAG = "MainViewModel"
     }
@@ -22,18 +21,14 @@ class MainViewModel @Inject constructor(private val getMealsUseCase: GetMealsUse
     private val _categories by lazy { MutableStateFlow<CategoryResponse?>(null) }
     val categories: StateFlow<CategoryResponse?> by lazy { _categories }
 
-    init {
-        getMeals()
-    }
-
-    private fun getMeals() {
+    fun getMeals() {
         viewModelScope.launch {
             try {
                 _categories.value = getMealsUseCase()
+                Log.d(TAG, "getMeals: ${_categories.value}")
             } catch (e: Exception) {
                 Log.e(TAG, "getMeals: ${e.message.toString()}")
             }
         }
-
     }
 }
