@@ -1,7 +1,8 @@
-package com.kerollosragaie.mealzapp
+package com.kerollosragaie.mealzapp.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kerollosragaie.mealzapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
