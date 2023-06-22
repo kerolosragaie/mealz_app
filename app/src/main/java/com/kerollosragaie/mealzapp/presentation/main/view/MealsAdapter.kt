@@ -1,4 +1,4 @@
-package com.kerollosragaie.mealzapp.features.main.view
+package com.kerollosragaie.mealzapp.presentation.main.view
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
