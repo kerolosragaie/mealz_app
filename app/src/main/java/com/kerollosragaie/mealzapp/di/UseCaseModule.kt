@@ -1,7 +1,7 @@
 package com.kerollosragaie.mealzapp.di
 
-import com.kerollosragaie.domain.repository.MealsRepository
-import com.kerollosragaie.domain.usecases.GetMealsUseCaseImpl
+import com.kerollosragaie.mealzapp.features.meals_menu.domain.repository.MealsRepository
+import com.kerollosragaie.mealzapp.features.meals_menu.domain.usecases.GetMealsUseCaseImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
