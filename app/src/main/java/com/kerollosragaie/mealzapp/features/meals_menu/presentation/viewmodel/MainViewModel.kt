@@ -1,4 +1,4 @@
-package com.kerollosragaie.mealzapp.presentation.main.viewmodel
+package com.kerollosragaie.mealzapp.features.meals_menu.presentation.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

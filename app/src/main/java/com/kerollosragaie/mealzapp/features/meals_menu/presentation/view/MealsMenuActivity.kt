@@ -1,22 +1,22 @@
-package com.kerollosragaie.mealzapp.presentation.main.view
+package com.kerollosragaie.mealzapp.features.meals_menu.presentation.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.kerollosragaie.mealzapp.databinding.ActivityMainBinding
-import com.kerollosragaie.mealzapp.presentation.main.viewmodel.MainViewModel
+import com.kerollosragaie.mealzapp.databinding.ActivityMealsMenuBinding
+import com.kerollosragaie.mealzapp.features.meals_menu.presentation.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class MealsMenuActivity : AppCompatActivity() {
 
-    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    private val binding by lazy { ActivityMealsMenuBinding.inflate(layoutInflater) }
 
     private val viewModel: MainViewModel by lazy {
-        ViewModelProvider(this@MainActivity)[MainViewModel::class.java]
+        ViewModelProvider(this@MealsMenuActivity)[MainViewModel::class.java]
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         val mealsAdapter = MealsAdapter()
 
         binding.categoryRv.apply {
-            layoutManager = LinearLayoutManager(this@MainActivity)
+            layoutManager = LinearLayoutManager(this@MealsMenuActivity)
             adapter = mealsAdapter
             setHasFixedSize(true)
         }
