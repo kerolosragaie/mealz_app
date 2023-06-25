@@ -1,7 +1,8 @@
 package com.kerollosragaie.mealzapp.di
 
-import com.kerollosragaie.data.remote.ApiServices
-import com.kerollosragaie.data.repository.MealsRepoImpl
+
+import com.kerollosragaie.mealzapp.features.meals_menu.data.remote.ApiServices
+import com.kerollosragaie.mealzapp.features.meals_menu.data.repository.MealsRepoImpl
 import com.kerollosragaie.mealzapp.features.meals_menu.domain.repository.MealsRepository
 import dagger.Module
 import dagger.Provides

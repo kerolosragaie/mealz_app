@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class MainViewModel @Inject constructor(private val getMealsUseCase: GetMealsUseCaseImpl) :
+class ViewModel @Inject constructor(private val getMealsUseCase: GetMealsUseCaseImpl) :
     ViewModel() {
     companion object {
         private const val TAG = "MainViewModel"

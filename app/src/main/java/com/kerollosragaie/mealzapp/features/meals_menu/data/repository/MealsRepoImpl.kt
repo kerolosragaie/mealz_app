@@ -1,6 +1,6 @@
-package com.kerollosragaie.data.repository
+package com.kerollosragaie.mealzapp.features.meals_menu.data.repository
 
-import com.kerollosragaie.data.remote.ApiServices
+import com.kerollosragaie.mealzapp.features.meals_menu.data.remote.ApiServices
 import com.kerollosragaie.mealzapp.features.meals_menu.domain.entity.CategoryResponse
 import com.kerollosragaie.mealzapp.features.meals_menu.domain.repository.MealsRepository
 

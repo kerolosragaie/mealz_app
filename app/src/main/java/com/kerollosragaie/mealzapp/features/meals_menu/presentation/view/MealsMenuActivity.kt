@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kerollosragaie.mealzapp.databinding.ActivityMealsMenuBinding
-import com.kerollosragaie.mealzapp.features.meals_menu.presentation.viewmodel.MainViewModel
+import com.kerollosragaie.mealzapp.features.meals_menu.presentation.viewmodel.ViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -15,8 +15,8 @@ class MealsMenuActivity : AppCompatActivity() {
 
     private val binding by lazy { ActivityMealsMenuBinding.inflate(layoutInflater) }
 
-    private val viewModel: MainViewModel by lazy {
-        ViewModelProvider(this@MealsMenuActivity)[MainViewModel::class.java]
+    private val viewModel: ViewModel by lazy {
+        ViewModelProvider(this@MealsMenuActivity)[ViewModel::class.java]
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +27,7 @@ class MealsMenuActivity : AppCompatActivity() {
 
     private fun initUi() {
         viewModel.getMeals()
-        val mealsAdapter = MealsAdapter()
+        val mealsAdapter = MealsMenuAdapter()
 
         binding.categoryRv.apply {
             layoutManager = LinearLayoutManager(this@MealsMenuActivity)

@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.kerollosragaie.mealzapp.features.meals_menu.domain.entity.Category
 import com.kerollosragaie.mealzapp.databinding.ItemCategoryBinding
 
-class MealsAdapter : ListAdapter<Category, MealsAdapter.ViewHolder>(DiffCallback()) {
+class MealsMenuAdapter : ListAdapter<Category, MealsMenuAdapter.ViewHolder>(DiffCallback()) {
 
     inner class ViewHolder(private val binding: ItemCategoryBinding) :
         RecyclerView.ViewHolder(binding.root) {

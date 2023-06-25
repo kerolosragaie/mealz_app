@@ -1,4 +1,4 @@
-package com.kerollosragaie.data.remote
+package com.kerollosragaie.mealzapp.features.meals_menu.data.remote
 
 import com.kerollosragaie.mealzapp.features.meals_menu.domain.entity.CategoryResponse
 import retrofit2.http.GET

@@ -1,6 +1,6 @@
 package com.kerollosragaie.mealzapp.di
 
-import com.kerollosragaie.data.remote.ApiServices
+import com.kerollosragaie.mealzapp.features.meals_menu.data.remote.ApiServices
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
