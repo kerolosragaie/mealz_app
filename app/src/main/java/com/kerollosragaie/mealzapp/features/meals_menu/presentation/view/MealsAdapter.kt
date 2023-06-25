@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.kerollosragaie.domain.entity.Category
+import com.kerollosragaie.mealzapp.features.meals_menu.domain.entity.Category
 import com.kerollosragaie.mealzapp.databinding.ItemCategoryBinding
 
 class MealsAdapter : ListAdapter<Category, MealsAdapter.ViewHolder>(DiffCallback()) {

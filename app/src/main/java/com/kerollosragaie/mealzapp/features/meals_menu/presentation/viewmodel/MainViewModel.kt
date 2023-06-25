@@ -3,8 +3,8 @@ package com.kerollosragaie.mealzapp.features.meals_menu.presentation.viewmodel
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.kerollosragaie.domain.entity.CategoryResponse
-import com.kerollosragaie.domain.usecases.GetMealsUseCaseImpl
+import com.kerollosragaie.mealzapp.features.meals_menu.domain.entity.CategoryResponse
+import com.kerollosragaie.mealzapp.features.meals_menu.domain.usecases.GetMealsUseCaseImpl
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

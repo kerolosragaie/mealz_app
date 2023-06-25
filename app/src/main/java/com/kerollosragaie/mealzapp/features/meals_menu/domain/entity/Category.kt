@@ -1,4 +1,4 @@
-package com.kerollosragaie.domain.entity
+package com.kerollosragaie.mealzapp.features.meals_menu.domain.entity
 
 data class Category(
     val idCategory: String,
