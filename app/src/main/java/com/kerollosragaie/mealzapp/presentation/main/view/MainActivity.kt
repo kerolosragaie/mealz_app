@@ -1,4 +1,4 @@
-package com.kerollosragaie.mealzapp.features.main.view
+package com.kerollosragaie.mealzapp.presentation.main.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kerollosragaie.mealzapp.databinding.ActivityMainBinding
-import com.kerollosragaie.mealzapp.features.main.viewmodel.MainViewModel
+import com.kerollosragaie.mealzapp.presentation.main.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
